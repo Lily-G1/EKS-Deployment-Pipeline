@@ -2,11 +2,10 @@
 ## CI/CD Pipeline to Deploy Web Applications & Monitoring on AWS EKS Cluster
 
 ### Details:  
-using Terraform, this project creates a Jenkins CI/CD pipeline to deploy a microservice web application (Weaveworks' sock-shop) alongside a simple web form in an AWS EKS cluster.  
+using Terraform, this project creates a Jenkins CI/CD pipeline to deploy a microservice web application (Weaveworks' sock-shop) alongside a simple web form in an AWS EKS cluster. Prometheus & Grafana monitoring tools are also configured to collect and display performance metrics of the cluster.  
 - The sock-shop project can be found here: https://github.com/microservices-demo/microservices-demo  
 - The web form is a personal creation. It is a simple HTML/CSS app that collects user data and stores it in a backend MySQL database. A link to details of its creation 
-  will be included here soon.  
-Prometheus & Grafana monitoring tools are configured to collect and display performance metrics of the cluster    
+  will be included here soon.    
 
 To run:  
 - Create an AWS S3 bucket by running terraform in the *'s3-bucket-state'* directory. This bucket will store all terraform state files  
