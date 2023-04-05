@@ -10,11 +10,11 @@ Prometheus & Grafana monitoring tools are configured to collect and display perf
 
 To run:  
 - Create an AWS S3 bucket by running terraform in the *s3-bucket-state* directory. This bucket will store all terraform state files  
-- Launch a Jenkins (EC2) server with required resources by running terraform in the **create-jenkins-server** directory  
+- Launch a Jenkins (EC2) server with required resources by running terraform in the *create-jenkins-server* directory  
 - Configure Jenkins with necessary AWS & Github access credentials
 - Create pipeline in Jenkins and build to launch EKS cluster, deploy web applications in cluster & configure monitoring tools. Web apps, Prometheus & Grafana dashboard 
   can be accessed through Load Balancer DNS names  
-- Test available built-in metrics in Prometheus by typing *sum(kube_pod_owner{job="kube-state-metrics"}) by (namespace)* in the search bar & click on the *Execute* button  
+- Test available built-in metrics in Prometheus by typing: **sum(kube_pod_owner{job="kube-state-metrics"}) by (namespace)** in the search bar & click on the **Execute** button  
 - Grafana login details:  
   - username: admin  
   - password: prom-operator (default)  
