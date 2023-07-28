@@ -1,5 +1,5 @@
 # EKS-Deployment-Pipeline  
-## CI/CD Pipeline to Deploy Web Applications & Monitoring on AWS EKS Cluster
+## CI/CD Pipeline to Deploy Web Applications & Monitoring on AWS EKS Cluster  
 
 ### Details:  
 using Terraform, this project creates a Jenkins CI/CD pipeline to deploy a microservice web application (Weaveworks' sock-shop) alongside a simple web form in an Amazon Elastic Kubernetes Service (EKS) cluster. Prometheus & Grafana monitoring tools are also configured to collect and display performance metrics of the cluster.  
@@ -16,4 +16,6 @@ To run:
 - To test built-in metrics in Prometheus, type '**sum(kube_pod_owner{job="kube-state-metrics"}) by (namespace)**' in the search bar & click on the **Execute** button  
 - Grafana login details:  
   - username: admin  
-  - password: prom-operator (default)  
+  - password: prom-operator (default)
+
+ ![K8s drawio(small)](https://github.com/Lily-G1/EKS-Deployment-Pipeline/assets/104821662/910fc99f-a90c-4cad-8af0-3f13a4ce5add)
